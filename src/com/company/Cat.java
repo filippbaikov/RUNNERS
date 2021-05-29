@@ -28,7 +28,7 @@ public class Cat implements Team {
         if (jump_length>=wall_size)
             System.out.println("кот [" +name+ "]: перепрыгнул");
         else
-            System.out.println("кот [" +name+ "]: да пошел ты, я не могу так прыгать");
+            System.out.println("кот [" +name+ "]:  я не могу так прыгать");
     }
 
     @Override
@@ -40,6 +40,14 @@ public class Cat implements Team {
 
             System.out.println("кот [" +name+ "]: я ленивый, я столько не бегаю");
 
+    }
+    @Override
+    public boolean chek() {
+
+        if (distance>=cross_distance){
+            jump();
+        }
+        return false;
     }
 
 }

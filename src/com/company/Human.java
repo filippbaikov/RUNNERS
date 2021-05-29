@@ -36,7 +36,15 @@ public class Human implements Team {
         if (jump_length >= wall_size)
             System.out.println("чувак [" + name + "]: перепрыгнул");
         else
-            System.out.println("чувак [" + name + "]: да пошел ты, я не могу так прыгать");
+            System.out.println("чувак [" + name + "]:  я не могу так прыгать");
+    }
+    @Override
+    public boolean chek() {
+
+        if (distance>=cross_distance){
+            jump();
+        }
+        return false;
     }
 }
 
