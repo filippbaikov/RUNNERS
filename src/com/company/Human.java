@@ -38,5 +38,13 @@ public class Human implements Team {
         else
             System.out.println("чувак [" + name + "]: да пошел ты, я не могу так прыгать");
     }
+    @Override
+    public boolean chek() {
+
+        if (distance>=cross_distance){
+            jump();
+        }
+        return false;
+    }
 }
 

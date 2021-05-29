@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
         Team[] team = {
-                new Human("Зураб", 200, 400),
-                new Human("Сосик", 300, 150),
+                new Human("Зураб", 200, 10),
+                new Human("Сосик", 100, 150),
                 new Human("Сулико", 400, 600),
                 new Cat("Асхаб", 340, 80),
                 new Cat("Хасбула", 100, 10),
@@ -16,7 +16,9 @@ public class Main {
         };
         for (int i = 0; i < team.length; i++) {
             team[i].cross();
-            team[i].jump();
+            team[i].chek();
+
+
 
         }
     }

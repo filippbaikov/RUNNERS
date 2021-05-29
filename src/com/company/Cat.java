@@ -41,5 +41,13 @@ public class Cat implements Team {
             System.out.println("кот [" +name+ "]: я ленивый, я столько не бегаю");
 
     }
+    @Override
+    public boolean chek() {
+
+        if (distance>=cross_distance){
+            jump();
+        }
+        return false;
+    }
 
 }

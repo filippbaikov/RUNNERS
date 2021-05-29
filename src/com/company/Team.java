@@ -7,6 +7,13 @@ public interface Team {
 
     int cross_distance=200;
     void cross();
+
+default boolean chek(){
+    cross();
+    jump();
+return true;
 }
+}
+
 // если jump и cross втрепать одним методом, то можно сделать закономерность наверное:
 //если не пробежал, значит не дошел до стены и не прыгнул
